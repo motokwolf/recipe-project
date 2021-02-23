@@ -18,6 +18,13 @@ header {
     padding: 20px;
 }
 
+/* dots in some lists and others no?
+list-style-type: circle; */
+li {
+    list-style-type: none;
+    line-height: 2em;
+}
+
 .stats {
     font-family: 'Fira Sans', sans-serif;
     text-transform: uppercase;
@@ -25,7 +32,9 @@ header {
     padding: 0;
 }
 
-/* idk what tag to use here {
+/* idk what tag to use here
+accent on the header
+ {
     background-color: #FFBC48;
     color: #222028;
 } */
@@ -42,7 +51,7 @@ nav {
     color: #FFBC48;
     background-color: #222028;
     margin: 0px;
-    padding: 20px;
+    padding: 5px 10px 5px 10px;
 }
 
 main {
