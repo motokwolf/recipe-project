@@ -8,123 +8,124 @@ body {
     
 }
 
-header {
-    color: #fff;
-    background-image: url('../img/ingredients-1920w.jpg') ;
-    background-size: cover;
-    background-color: #444;
-    background-blend-mode: multiply;
-    margin: 0px;
-    padding: 20px;
-}
+    header {
+        color: #fff;
+        background-image: url('../img/ingredients-1920w.jpg') ;
+        background-size: cover;
+        background-color: #444;
+        background-blend-mode: multiply;
+        margin: 0px;
+        padding: 20px;
+    }
 
-/* dots in some lists and others no?
-list-style-type: circle; */
-li {
-    list-style-type: none;
-    line-height: 2em;
-}
+        ul {
+            padding: inherit;
+            list-style-position: inside;
+        }
 
-.stats {
-    font-family: 'Fira Sans', sans-serif;
-    text-transform: uppercase;
-    list-style: none;
-    padding: 0;
-}
+            li {
 
-/* idk what tag to use here
-accent on the header
- {
-    background-color: #FFBC48;
-    color: #222028;
-} */
+                line-height: 2em;
+            }
+                .nobullet {
+                    list-style-type: none;
+                }
 
-em {
-    text-decoration: underline;
-    color: #FFBC48;
-    font-weight: bold;
-    font-style: normal;
-}
+        .stats {
+            font-family: 'Fira Sans', sans-serif;
+            text-transform: uppercase;
+            list-style: none;
+            padding: 0;
+        }
 
-nav {
-    font-family: 'Fira Sans', sans-serif;
-    color: #FFBC48;
-    background-color: #222028;
-    margin: 0px;
-    padding: 5px 10px 5px 10px;
-}
+        /* idk what tag to use here
+        accent on the header
+        {
+            background-color: #FFBC48;
+            color: #222028;
+        } */
 
-main {
-    margin: 20px;
-}
+        em {
+            text-decoration: underline;
+            color: #FFBC48;
+            font-weight: bold;
+            font-style: normal;
+        }
 
-a {
-    color: #FFBC48;
-    text-decoration: none;
-}
+    nav {
+        font-family: 'Fira Sans', sans-serif;
+        color: #FFBC48;
+        background-color: #222028;
+        margin: 0px;
+        padding: 5px 10px 5px 10px;
+    }
 
-h1 {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 2em;
-    line-height: 95%;
-}
+    main {
+        margin: 20px;
+    }
 
-h2 {
-    font-family: 'Fira Sans', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding-top: 45px;
-}
+        a {
+            color: #FFBC48;
+            text-decoration: none;
+        }
 
-h3 {
-    font-weight: 400;
-}
+        h1 {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 2em;
+            line-height: 95%;
+        }
 
-blockquote {
-    font-style: italic;
-    padding-left: 20px;
-    margin-left: 0px;
-    border-left: #FFBC48 solid 4px;
-}
+        h2 {
+            font-family: 'Fira Sans', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding-top: 45px;
+        }
 
-h4 {
-    font-family: 'Fira Sans', sans-serif;
-}
+        h3 {
+            font-weight: 400;
+        }
 
-ul {
-    padding: inherit;
-    list-style-position: inside;
-}
+        blockquote {
+            font-style: italic;
+            padding-left: 20px;
+            margin-left: 0px;
+            border-left: #FFBC48 solid 4px;
+        }
 
-figure, figcaption {
-    padding: 0;
-    margin: 0;
-    line-height: 1;
-}
+        h4 {
+            font-family: 'Fira Sans', sans-serif;
+        }
 
-img {
-    max-width:100%;
-}
+        figure, figcaption {
+            padding: 0;
+            margin: 0;
+            line-height: 1;
+        }
 
-table, td, th {  
-    border: 1px solid #222028;
-    text-align: center;
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th, td {
-    padding: 10px;
-  }
+        img {
+            max-width:100%;
+        }
 
-  tr:nth-child(odd) {background-color: #f2f2f2;}
+        table, td, th {  
+            border: 1px solid #222028;
+            text-align: center;
+        }
+        
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            
+            th, td {
+                padding: 10px;
+            }
 
-footer {
-    padding: 20px;
-    margin: 0;
-    background-color: #222028;
-    color: #fff;
-}
+        tr:nth-child(odd) {background-color: #f2f2f2;}
+
+    footer {
+        padding: 20px;
+        margin: 0;
+        background-color: #222028;
+        color: #fff;
+    }
