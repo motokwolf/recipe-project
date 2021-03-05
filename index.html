@@ -21,10 +21,10 @@
         <p>
           <!-- Find a better way to write this -->
           <ul class="stats">
-            <li class="nobullet">Active time 40 mins</li>
-            <li class="nobullet">total time 3hrs</li>
-            <li class="nobullet">calories 1670</li>
-            <li class="nobullet">skill level medium</li>
+            <li class="nobullet">Active time <em class="highlight">40 mins</em></li>
+            <li class="nobullet">total time <em class="highlight">3hrs</em></li>
+            <li class="nobullet">calories <em class="highlight">1670</em></li>
+            <li class="nobullet">skill level <em class="highlight">medium</em></li>
           </ul>
         </p>
       </header>
@@ -42,6 +42,7 @@
       </nav>
       <main>
 
+        <article>
         <h2 id="story">Story</h2>
           <p>Lorem ipsum, <em>delicious bread</em> dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
@@ -54,7 +55,8 @@
           <!-- this will be a carroussel later -->
           <img src="img\gallery-a.jpg" alt="Bread">
 
-
+        </article>
+        <article>
         <h2 id="igredients">Igredients</h2>
         <!-- Icon selection between grams and lbs (js?) -->
         <p>
@@ -66,7 +68,8 @@
             <li>Extra flour (for dusting)</li>
           </ul>
         </p>
-
+      </article>
+      <article>
         <h2 id="equipment">Equipment</h2>
         <p>
           <ul>
@@ -77,35 +80,37 @@
             <li>Thermometer</li>
           </ul>
         </p>
-
+      </article>
+      <article> 
         <h2 id="process">Process</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
 
-        <!-- Look for a way to number these, OL tag??? -->
-        <h4>Mixing</h4>
+        <ol class="steps-container">
+        <li class="steps">Mixing</li>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum consectetur laboriosam enim saepe cumque iste aut corrupti temporibus animi labore consequatur, quasi dignissimos voluptate officiis, atque vero rerum beatae similique?</p>
           <figure>
             <img src="img\mixing-ingredients-960w.jpg" alt="Bread">
             <figcaption>All ingrediends mixed to form a shaggy dough</figcaption>
           </figure>
-        <h4>Folding</h4>
+          <li class="steps">Folding</li>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore assumenda, possimus, dolorem omnis iusto incidunt deleniti dolorum earum, odio facere at cumque reprehenderit. Magni corporis totam tempora culpa, eligendi porro.</p>
           <figure>
             <img src="img\folding-dough-960w.jpg" alt="Bread">
             <figcaption>Folding the dough, instead of kneading</figcaption>
           </figure>
-        <h4>Proofing</h4>
+          <li class="steps">Proofing</li>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis itaque impedit, ullam suscipit aliquam similique sed animi alias placeat nulla dolor et architecto aperiam laboriosam soluta voluptas cumque? Ea, autem?</p>
           <figure>
             <img src="img\proofing-960w.jpg" alt="Bread">
             <figcaption>Dough dusted with flour, ready to sit and proof</figcaption>
           </figure>
-        <h4>Baking</h4>
+          <li class="steps">Baking</li>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cumque aspernatur autem unde porro repellendus! Autem cum repudiandae eius magnam dolore maxime suscipit quae, ipsa, expedita deleniti quia neque at.</p>
           <figure>
             <img src="img\baked-baguettes-960w.jpg" alt="Bread">
             <figcaption>Delicious baked baguettes, cut and stacked</figcaption>
           </figure>
+          </ol>
         <h2 id="schedule">Schedule</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
           <table style="border: 1px solid black;">
@@ -148,7 +153,8 @@
               <td>mix</td>
             </tr>
           </table>
-
+        </article> 
+        <article>
         <h2 id="result">Result</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
           <figure>
@@ -157,7 +163,9 @@
           </figure>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>        
-      </main>
+        </article>
+
+        </main>
       <footer>
         <p>Copyright © 1970
         <br><a href="">Terms</a> | <a href="">Privacy</a></p>
