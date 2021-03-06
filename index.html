@@ -11,8 +11,7 @@
   </head>
 
   <body>
-    <article>
-      <header>
+    <header>
 
         <!-- "baking tag on top" -->
         
@@ -27,61 +26,62 @@
             <li class="nobullet">skill level <em class="highlight">medium</em></li>
           </ul>
         </p>
-      </header>
-      <nav>
-        <!-- use class to define this as an item without bullet circle.
-        use float to push them to the side (watch linked in video on float and flex) -->
-        <ul>
-        <li class="nobullet"><a href="#story">Story</a></li>
-        <li class="nobullet"><a href="#igredients">Igredients</a> </li>
-        <li class="nobullet"><a href="#equipment">Equipment</a> </li>
-        <li class="nobullet"><a href="#process">Process</a></li>
-        <li class="nobullet"><a href="#schedule">Schedule</a></li>
-        <li class="nobullet"><a href="#result">Result</a></li>
-        </ul>
-      </nav>
-      <main>
+    </header>
+  <div class="grid-container">
+    <nav class="content">
+        <a class="nav" href="#story">Story</a>
+        <a class="nav" href="#igredients">Igredients</a>
+        <a class="nav" href="#equipment">Equipment</a> 
+        <a class="nav" href="#process">Process</a>
+        <a class="nav" href="#schedule">Schedule</a>
+        <a class="nav" href="#result">Result</a>
+    </nav>
 
-        <article>
+    <main class="content">
+      <article >
+        <section >
         <h2 id="story">Story</h2>
           <p>Lorem ipsum, <em>delicious bread</em> dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
           <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! 
-            <br>
-            <br> Some Dude
+            <p> Some Dude </p>
           </blockquote>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
 
           <!-- this will be a carroussel later -->
           <img src="img\gallery-a.jpg" alt="Bread">
 
-        </article>
-        <article>
-        <h2 id="igredients">Igredients</h2>
-        <!-- Icon selection between grams and lbs (js?) -->
-        <p>
-          <ul>
-            <li><b>500g</b> bread flour</li>
-            <li><b>400g</b> cool water/li>
-            <li><b>10g</b> salt</li>
-            <li><b>4.5g</b> yeast</li>
-            <li>Extra flour (for dusting)</li>
-          </ul>
-        </p>
-      </article>
-      <article>
-        <h2 id="equipment">Equipment</h2>
-        <p>
-          <ul>
-            <li>Large bowl</li>
-            <li>Plastic wrap</li>
-            <li>Baking sheet or stone</li>
-            <li>Bench scraper</li>
-            <li>Thermometer</li>
-          </ul>
-        </p>
-      </article>
-      <article> 
+        </section>
+
+        <div class="sidebar">
+            <section>
+            <h2 id="igredients">Igredients</h2>
+            <!-- Icon selection between grams and lbs (js?) -->
+            <p>
+              <ul>
+                <li><b>500g</b> bread flour</li>
+                <li><b>400g</b> cool water/li>
+                <li><b>10g</b> salt</li>
+                <li><b>4.5g</b> yeast</li>
+                <li>Extra flour (for dusting)</li>
+              </ul>
+            </p>
+            </section>
+            <section>
+            <h2 id="equipment">Equipment</h2>
+            <p>
+              <ul>
+                <li>Large bowl</li>
+                <li>Plastic wrap</li>
+                <li>Baking sheet or stone</li>
+                <li>Bench scraper</li>
+                <li>Thermometer</li>
+              </ul>
+            </p>
+            </section>
+        </div>
+
+        <section> 
         <h2 id="process">Process</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
 
@@ -153,8 +153,9 @@
               <td>mix</td>
             </tr>
           </table>
-        </article> 
-        <article>
+        </section>
+        
+        <section>
         <h2 id="result">Result</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
           <figure>
@@ -162,18 +163,16 @@
             <figcaption>Two baguettes, wrapped up and ready to share</figcaption>
           </figure>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>        
-        </article>
-
-        </main>
-      <footer>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>    
+        </section>     
+      </article>
+    </main>
+      
+    <footer>
         <p>Copyright © 1970
         <br><a href="">Terms</a> | <a href="">Privacy</a></p>
-        <!-- Add Icons later -->
-        <a href=""><img></a>
-        <a href=""><img></a>
-        <a href=""><img></a>
-      </footer>
-    </article>
+    </footer>
+    </div>
+  </div>
   </body>
 </html>
