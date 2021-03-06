@@ -27,34 +27,42 @@ body {
 
                 line-height: 2em;
             }
-                
-
-        .nobullet {
-                    list-style-type: none;
-                }
-
-        
+            
 
         .stats {
             font-family: 'Fira Sans', sans-serif;
             text-transform: uppercase;
             list-style: none;
-            padding: 0;
+            padding: 2px;
+                margin: 2px;
+                display: flex;
+                max-width: 11em;
+                flex-flow: row wrap
+
         }
 
-        .highlight
-        {
-            background-color: #FFBC48;
-            color: #222028;
-            text-decoration: none;
-        }
+                .highlight
+                {
+                    background-color: #FFBC48;
+                    color: #222028;
+                    text-decoration: none;
+                    padding: 0 2px;
+                    margin: 1em 0;
+                }
 
-        em {
-            text-decoration: underline;
-            color: #FFBC48;
-            font-weight: bold;
-            font-style: normal;
-        }
+                .nobullet {
+                    list-style-type: none;
+                    padding: 0px 5px;
+                    margin: 1em 0;
+
+                }
+
+                em {
+                    text-decoration: underline;
+                    color: #FFBC48;
+                    font-weight: bold;
+                    font-style: normal;
+                }
 
     nav {
         font-family: 'Fira Sans', sans-serif;
@@ -146,6 +154,10 @@ body {
         color: #fff;
     }
 
+    .sidebar-hidden {
+        display: none;           
+      }
+
     @media screen and (min-width: 720px) {
 
         html{
@@ -163,12 +175,19 @@ body {
         box-shadow: 0 0 1rem #111;
         }
 
+        .flex-grid {
+            display: flex;
+            flex-flow: row;
+        }
        
-        .sidebar {
+        .sidebar-hidden {
             background-color: #FFBC48;
-            flex: 1 100%;
-            order: -1;
-              
+            padding: 20px;
+            width: auto;
+            min-width: 200px;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            display: flex;           
           }
 
         h1 {
@@ -183,6 +202,24 @@ body {
             align-items: center;
             justify-content: space-around;
         }
-    }
 
-    
+        .stats {
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            max-width: none;
+            max-height: 4em;
+        }
+
+                .highlight
+                {
+                    padding: 0 2px;
+                    margin: 0;
+                }
+
+                .nobullet {
+                    padding: 0px 5px;
+                    margin: 0;
+
+                }
+    }

@@ -19,16 +19,14 @@
         <h3>Make three <b>fluffy and delicious baguettes,</b> using a simple <em>folding technique,</em> instead of labor-intesive kneading.</h3>
         <p>
           <!-- Find a better way to write this -->
-          <ul class="stats">
-            <li class="nobullet">Active time <em class="highlight">40 mins</em></li>
-            <li class="nobullet">total time <em class="highlight">3hrs</em></li>
-            <li class="nobullet">calories <em class="highlight">1670</em></li>
-            <li class="nobullet">skill level <em class="highlight">medium</em></li>
-          </ul>
+          <div class="stats">
+            <p class="nobullet">Active time</p> <p class="highlight">40 mins</p>
+            <p class="nobullet">total time</p> <p class="highlight">3hrs</p>
+            <p class="nobullet">calories</p> <p class="highlight">1670</p>
+            <p class="nobullet">skill level</p> <p class="highlight">medium</p>
         </p>
     </header>
-  <div class="grid-container">
-    <nav class="content">
+    <nav>
         <a class="nav" href="#story">Story</a>
         <a class="nav" href="#igredients">Igredients</a>
         <a class="nav" href="#equipment">Equipment</a> 
@@ -36,143 +34,168 @@
         <a class="nav" href="#schedule">Schedule</a>
         <a class="nav" href="#result">Result</a>
     </nav>
-
-    <main class="content">
-      <article >
-        <section >
-        <h2 id="story">Story</h2>
-          <p>Lorem ipsum, <em>delicious bread</em> dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
-          <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! 
-            <p> Some Dude </p>
-          </blockquote>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
-
-          <!-- this will be a carroussel later -->
-          <img src="img\gallery-a.jpg" alt="Bread">
-
-        </section>
-
-        <div class="sidebar">
-            <section>
-            <h2 id="igredients">Igredients</h2>
-            <!-- Icon selection between grams and lbs (js?) -->
-            <p>
-              <ul>
-                <li><b>500g</b> bread flour</li>
-                <li><b>400g</b> cool water/li>
-                <li><b>10g</b> salt</li>
-                <li><b>4.5g</b> yeast</li>
-                <li>Extra flour (for dusting)</li>
-              </ul>
-            </p>
-            </section>
-            <section>
-            <h2 id="equipment">Equipment</h2>
-            <p>
-              <ul>
-                <li>Large bowl</li>
-                <li>Plastic wrap</li>
-                <li>Baking sheet or stone</li>
-                <li>Bench scraper</li>
-                <li>Thermometer</li>
-              </ul>
-            </p>
-            </section>
-        </div>
-
-        <section> 
-        <h2 id="process">Process</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
-
-        <ol class="steps-container">
-        <li class="steps">Mixing</li>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum consectetur laboriosam enim saepe cumque iste aut corrupti temporibus animi labore consequatur, quasi dignissimos voluptate officiis, atque vero rerum beatae similique?</p>
-          <figure>
-            <img src="img\mixing-ingredients-960w.jpg" alt="Bread">
-            <figcaption>All ingrediends mixed to form a shaggy dough</figcaption>
-          </figure>
-          <li class="steps">Folding</li>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore assumenda, possimus, dolorem omnis iusto incidunt deleniti dolorum earum, odio facere at cumque reprehenderit. Magni corporis totam tempora culpa, eligendi porro.</p>
-          <figure>
-            <img src="img\folding-dough-960w.jpg" alt="Bread">
-            <figcaption>Folding the dough, instead of kneading</figcaption>
-          </figure>
-          <li class="steps">Proofing</li>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis itaque impedit, ullam suscipit aliquam similique sed animi alias placeat nulla dolor et architecto aperiam laboriosam soluta voluptas cumque? Ea, autem?</p>
-          <figure>
-            <img src="img\proofing-960w.jpg" alt="Bread">
-            <figcaption>Dough dusted with flour, ready to sit and proof</figcaption>
-          </figure>
-          <li class="steps">Baking</li>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cumque aspernatur autem unde porro repellendus! Autem cum repudiandae eius magnam dolore maxime suscipit quae, ipsa, expedita deleniti quia neque at.</p>
-          <figure>
-            <img src="img\baked-baguettes-960w.jpg" alt="Bread">
-            <figcaption>Delicious baked baguettes, cut and stacked</figcaption>
-          </figure>
-          </ol>
-        <h2 id="schedule">Schedule</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
-          <table style="border: 1px solid black;">
-            <tr>
-              <th colspan="2">Time</th>
-              <th colspan="2" rowspan="2">Task</th>
-            </tr>
-            <tr>
-            <th>Start</th>
-              <th>Duration</th>
-            </tr>
-            <tr>
-              <td>0</td>
-              <td>(20 min)</td>
-              <td>mix</td>
-            </tr>
-              <tr>
-              <td>0</td>
-              <td>(20 min)</td>
-              <td>mix</td>
-            </tr>
-              <tr>
-              <td>0</td>
-              <td>(20 min)</td>
-              <td>mix</td>
-            </tr>
-              <tr>
-              <td>0</td>
-              <td>(20 min)</td>
-              <td>mix</td>
-            </tr>
-              <tr>
-              <td>0</td>
-              <td>(20 min)</td>
-              <td>mix</td>
-            </tr>
-              <tr>
-              <td>0</td>
-              <td>(20 min)</td>
-              <td>mix</td>
-            </tr>
-          </table>
-        </section>
-        
+    <div class="flex-grid">
+      <div class="sidebar-hidden">
         <section>
-        <h2 id="result">Result</h2>
+        <h2 id="igredients">Igredients</h2>
+        <!-- Icon selection between grams and lbs (js?) -->
+        <p>
+          <ul>
+            <li><b>500g</b> bread flour</li>
+            <li><b>400g</b> cool water</li>
+            <li><b>10g</b> salt</li>
+            <li><b>4.5g</b> yeast</li>
+            <li>Extra flour (for dusting)</li>
+          </ul>
+        </p>
+        </section>
+        <section>
+        <h2 id="equipment">Equipment</h2>
+        <p>
+          <ul>
+            <li>Large bowl</li>
+            <li>Plastic wrap</li>
+            <li>Baking sheet or stone</li>
+            <li>Bench scraper</li>
+            <li>Thermometer</li>
+          </ul>
+        </p>
+        </section>
+      </div>
+      <main class="content">
+        <article >
+          <section >
+          <h2 id="story">Story</h2>
+            <p>Lorem ipsum, <em>delicious bread</em> dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
+            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! 
+              <p> Some Dude </p>
+            </blockquote>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
+
+            <!-- this will be a carroussel later -->
+            <img src="img\gallery-a.jpg" alt="Bread">
+
+          </section>
+
+          <div class="sidebar">
+              <section>
+              <h2 id="igredients">Igredients</h2>
+              <!-- Icon selection between grams and lbs (js?) -->
+              <p>
+                <ul>
+                  <li><b>500g</b> bread flour</li>
+                  <li><b>400g</b> cool water</li>
+                  <li><b>10g</b> salt</li>
+                  <li><b>4.5g</b> yeast</li>
+                  <li>Extra flour (for dusting)</li>
+                </ul>
+              </p>
+              </section>
+              <section>
+              <h2 id="equipment">Equipment</h2>
+              <p>
+                <ul>
+                  <li>Large bowl</li>
+                  <li>Plastic wrap</li>
+                  <li>Baking sheet or stone</li>
+                  <li>Bench scraper</li>
+                  <li>Thermometer</li>
+                </ul>
+              </p>
+              </section>
+          </div>
+
+          <section> 
+          <h2 id="process">Process</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
-          <figure>
-            <img src="img\ready-to-eat-480w.jpg" alt="Bread">
-            <figcaption>Two baguettes, wrapped up and ready to share</figcaption>
-          </figure>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>    
-        </section>     
-      </article>
-    </main>
-      
-    <footer>
-        <p>Copyright © 1970
-        <br><a href="">Terms</a> | <a href="">Privacy</a></p>
-    </footer>
-    </div>
-  </div>
+
+          <ol class="steps-container">
+          <li class="steps">Mixing</li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum consectetur laboriosam enim saepe cumque iste aut corrupti temporibus animi labore consequatur, quasi dignissimos voluptate officiis, atque vero rerum beatae similique?</p>
+            <figure>
+              <img src="img\mixing-ingredients-960w.jpg" alt="Bread">
+              <figcaption>All ingrediends mixed to form a shaggy dough</figcaption>
+            </figure>
+            <li class="steps">Folding</li>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore assumenda, possimus, dolorem omnis iusto incidunt deleniti dolorum earum, odio facere at cumque reprehenderit. Magni corporis totam tempora culpa, eligendi porro.</p>
+            <figure>
+              <img src="img\folding-dough-960w.jpg" alt="Bread">
+              <figcaption>Folding the dough, instead of kneading</figcaption>
+            </figure>
+            <li class="steps">Proofing</li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis itaque impedit, ullam suscipit aliquam similique sed animi alias placeat nulla dolor et architecto aperiam laboriosam soluta voluptas cumque? Ea, autem?</p>
+            <figure>
+              <img src="img\proofing-960w.jpg" alt="Bread">
+              <figcaption>Dough dusted with flour, ready to sit and proof</figcaption>
+            </figure>
+            <li class="steps">Baking</li>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cumque aspernatur autem unde porro repellendus! Autem cum repudiandae eius magnam dolore maxime suscipit quae, ipsa, expedita deleniti quia neque at.</p>
+            <figure>
+              <img src="img\baked-baguettes-960w.jpg" alt="Bread">
+              <figcaption>Delicious baked baguettes, cut and stacked</figcaption>
+            </figure>
+            </ol>
+          <h2 id="schedule">Schedule</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
+            <table style="border: 1px solid black;">
+              <tr>
+                <th colspan="2">Time</th>
+                <th colspan="2" rowspan="2">Task</th>
+              </tr>
+              <tr>
+              <th>Start</th>
+                <th>Duration</th>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>(20 min)</td>
+                <td>mix</td>
+              </tr>
+                <tr>
+                <td>0</td>
+                <td>(20 min)</td>
+                <td>mix</td>
+              </tr>
+                <tr>
+                <td>0</td>
+                <td>(20 min)</td>
+                <td>mix</td>
+              </tr>
+                <tr>
+                <td>0</td>
+                <td>(20 min)</td>
+                <td>mix</td>
+              </tr>
+                <tr>
+                <td>0</td>
+                <td>(20 min)</td>
+                <td>mix</td>
+              </tr>
+                <tr>
+                <td>0</td>
+                <td>(20 min)</td>
+                <td>mix</td>
+              </tr>
+            </table>
+          </section>
+          
+          <section>
+          <h2 id="result">Result</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
+            <figure>
+              <img src="img\ready-to-eat-480w.jpg" alt="Bread">
+              <figcaption>Two baguettes, wrapped up and ready to share</figcaption>
+            </figure>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis molestiae! Accusamus eum cupiditate reprehenderit quas eaque culpa sint! Incidunt iure sint ipsam quod facilis laborum vero rem ullam illum.</p>    
+          </section>     
+        </article>
+      </main>
+      </div>
+      <footer>
+          <p>Copyright © 1970
+          <br><a href="">Terms</a> | <a href="">Privacy</a></p>
+      </footer>
   </body>
 </html>
